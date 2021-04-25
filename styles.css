@@ -1,0 +1,19 @@
+header,footer{
+    background-color: rgb(125, 90, 196);
+    padding:1em;
+    } 
+    
+  header, main, footer{
+      margin:0 auto;
+      max-width:760px;
+  
+  }
+  body{
+      background-color: rgb(21, 85, 21);
+  }
+  header img{
+    float:right;
+    width:150px;
+    height:auto;
+    margin-top:-10px;
+  }
