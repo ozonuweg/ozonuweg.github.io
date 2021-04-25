@@ -1,5 +1,5 @@
+document.querySelector('#lastmod').textContent = document.lastModified;
 
-let d = new Date();
-
-document.querySelector("#lastmod").textContent = document.lastUpdated;
-document.querySelector("#currentyear").textContent = d.getFullYear();
+let currentYear = "2021";
+let yearElement = document.querySelector('#year')
+yearElement.textContent = currentYear;
