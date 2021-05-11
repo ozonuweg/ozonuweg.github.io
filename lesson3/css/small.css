@@ -3,8 +3,6 @@
 
   header,
   footer {
-    display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -15,20 +13,18 @@
   main,
   footer {
     max-width: 767px;
-    margin: 0 auto;
+    margin: 0;
   }
+
   h1 {
     font-size: 2rem;
     text-align: center;
   }
-    
-  nav {
-    text-align: center;
-    box-shadow: 0 2px 15px gray;
-  }
 
   nav ul {
     list-style-type: none;
+    display: flex;
+    flex-flow: column;
   }
 
   nav ul li a {
@@ -47,9 +43,6 @@ header h1 {
     margin-right: auto;
 }
 
-/* nav > ul {
-    grid-template-columns: 1fr;
-} */
 section.grid {
     grid-template-columns: 1fr;
 }
