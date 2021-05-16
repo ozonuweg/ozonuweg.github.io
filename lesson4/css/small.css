@@ -1,13 +1,15 @@
 @media only screen and (max-width: 649px) {
-.nav-bar ul {
-    display: block;
-}
-
 .nav-bar li:first-child {
 	display: block;
 }
 .nav-bar li {
     display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
 }
 
 .headings {
