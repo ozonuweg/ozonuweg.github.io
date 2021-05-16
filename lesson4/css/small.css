@@ -1,7 +1,6 @@
 @media only screen and (max-width: 649px) {
-
-.responsive li {
-	display: block;
+.nav-bar ul {
+    display: block;
 }
 
 .nav-bar li:first-child {
@@ -30,5 +29,10 @@ header img {
 h2 {
     font-size: 1.5rem;
 }
+
+.responsive li {
+	display: block;
+}
+
 
 }
