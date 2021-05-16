@@ -1,0 +1,34 @@
+@media only screen and (max-width: 649px) {
+
+.responsive li {
+	display: block;
+}
+
+.nav-bar li:first-child {
+	display: block;
+}
+.nav-bar li {
+    display: none;
+}
+
+.headings {
+    margin-left: -15rem;
+}
+
+header img {
+    width: 50%;
+}
+
+.headings h1 {
+    font-size: 2rem;
+}
+
+.motto {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+}

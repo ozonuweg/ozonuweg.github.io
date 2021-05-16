@@ -1,0 +1,175 @@
+/* HEADER */
+header {
+    background-color: rgb(168, 138, 228);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 0;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 60rem;
+} 
+
+.headings {
+	display: flex;
+	flex-direction: column;
+    margin-left: -13rem;
+}
+
+.headings h1 {
+    margin: 0 0 0 17px;
+    font-size: 3rem;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+    font-size: .9rem;
+}
+
+header img {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+	margin: 0 auto;
+	max-width: 60rem;
+	background-color: white;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-bar li:first-child {
+    display: none;
+}
+
+.nav-bar li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.nav-bar li a {
+    color: rgb(21, 85, 21);
+    font-size: 1rem;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 85, 21);
+    font-weight: 700;
+}
+
+.nav-bar a:link {
+    color: black;
+}
+
+.nav-bar a:visited {
+    color: rgb(21, 85, 21);
+}
+
+.nav-bar a:hover {
+    color: blue;
+}
+
+nav a.default, nav a:active {
+    background-color: rgb(168, 138, 228);
+    Box-shadow: 0 0 10px rgb(168, 138, 228);
+} 
+
+
+
+
+
+
+/* WHOLE HTML */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* BODY */
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    border-bottom: double;
+    border-color:black ;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Righteous', cursive;
+    color: rgb(21, 85, 21);
+}
+
+h5 {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+div.place-holder {
+    padding: 1rem;
+    background-color: #eee;
+    border: dashed 1px darkgray;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: rgb(168, 138, 228);
+	padding: 10px;
+    font-size: 1.1rem;
+}
+
+.update{
+    font-size:12px;
+    color:rgb(7, 5, 5);
+}

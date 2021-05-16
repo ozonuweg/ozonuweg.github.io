@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 4 Preston Town Page for Glory Ozonuwe in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    
+    <title>WDD 230 Preston Town Page for Glory Ozonuwe</title>   
+</head>
+
+<body>
+    <header class="the-header">
+        <picture><img class="logo" src="images/weather-logo.png" alt="icon"></picture>
+        <section class="headings">
+            <h1>Weather Up To Date</h1>
+            <div class="motto">stay with us, stay updated</div>
+        </sections>
+    </header>
+    
+    <nav> 
+        <ul class="nav-bar">
+            <li class="toggle"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li id="home"><a class="" href="#">Home</a></li>
+            <li id="preston"><a class="default" href="#">Preston</a></li>
+            <li id="sodasprings"><a class="" href="#">Soda Springs</a></li>
+            <li id="fishhaven"><a class="" href="#">Fish Haven</a></li>
+            <li id="stormcenter"><a class="" href="#">Storm Center</a></li>
+            <li id="gallery"><a class="" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main><br>
+        <h2>Preston Idaho</h2>
+        <div class="place-holder">Hero w/ weather summary</div>
+        <div class="place-holder">5 Day Forecast</div>
+        <div class="place-holder">Article</div>
+        <div class="place-holder">Contact Information</div>
+    </main>
+
+    <footer>
+        &copy; <span id="currentdate"></span> | Glory Ozonuwe
+        <section class="update">Last Updated: <span id="lastmod"></span></section>
+    </footer>
+    
+    <script src="js/week4.js"></script>
+</body>
+</html>
