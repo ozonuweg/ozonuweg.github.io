@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lesson 5 Preston Town Page for Glory Ozonuwe in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>WDD 230 Preston Town Page for Glory Ozonuwe</title>   
 </head>
@@ -43,16 +45,14 @@
     <main><br>
         <h2>Preston Idaho</h2>
         <div class="hero">
-            <img src="images/purple_sky_banner.jpg" class="heroImg" alt="Purple Sky Cool weather">
+            <img src="images/blue-sky.jpeg" class="heroImg" alt="Purple Sky Cool weather">
             <section class="weatherSummary">
                 <h3>Weather Summary</h3>
-                <div class="summaryText">
-                    <p>Currently: Sunny</p>
-                    <p>High: 76&deg;F</p>
-                    <p>Wind Chill: &deg;F</p>
-                    <p>Humidity: 69%</p>
-                    <p>Wind Speed: 5 mph</p>
-                </div>
+                <span>Currently:</span><span class="colored">Sunny</span><br>
+                <span>High:</span><span class="colored">76&deg;F</span><br>
+                <span>Wind Chill:</span><span class="colored">&deg;F</span><br>
+                <span>Humidity:</span><span class="colored">69%</span><br>
+                <span>Wind Speed:</span><span class="colored">5 mph</span><br>
           </section>
         </div>
 
@@ -94,7 +94,8 @@
                 <div class="img-holder">
                     <img src="./images/tornado.jpg" alt="house destroyed by tornado">
                 </div>
-                <h3>Article Title</h3>
+                <h3>Terrible Tornado Week</h3>
+                <h5>By Chizoba Ramsey</h5>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis fugiat ullam animi porro magni
                     beatae voluptatum error saepe? Officia repellendus deserunt fugiat odio quo a obcaecati dolorem,
@@ -106,27 +107,25 @@
                     consequatur numquam, atque cum quis placeat fuga perferendis.
                 </p>
             </section>
-        </div>
+        </div><br>
 
-        <div class="contact-info">
         <section class="contact-info">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
                 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <h3>Contact Information</h3>
-            <ul class="fa-ul">
-                <li><i class="fa-li fa fa-location-arrow"></i>123 S<sup>th</sup> Somewhere St.<span
-                        id="brk1"></span>Preston, ID 83263</li>
-                <li><i class="fa-li fa fa-phone"></i>(208) 123-4567</li>
-                <li><i class="fa-li fa fa-envelope"></i>info@weather-or-not.org</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://currents.google.com/" target="_blank" class="fa fa-google-plus-square"></a>
-                <a href="https://facebook.com/" target="_blank" class="fa fa-facebook-square"></a>
-                <a href="https://flickr.com/" target="_blank" class="fa fa-flickr"></a>
+            <div class="contact-icons">
+                <i>&#128205; &#9; 30 N 1ST E <br>Preston, ID 83263</i><br><br>
+                <i>&#128222; &#9; (208) 123-4567</i><br>
+                <i>&#128231; &#9; info@weatheruptodate.com</i><br>
+            
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-pinterest"></a>
             </div>
         </section>
-        </div>
+
     </main>
 
     <footer>

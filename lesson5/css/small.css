@@ -32,6 +32,28 @@ h2 {
     font-size: 1.5rem;
 }
 
+.weatherSummary {
+    padding: 10px;
+    left: 3rem;
+    background-color: rgba(237, 236, 236, 0.8);
+    margin-top: -10rem;
+}
+
+.weatherSummary h3 {
+    font-size: 1em;
+    padding-bottom: 7px;
+}
+
+.weatherSummary span {
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.forecastSec {
+    display: none;
+}
+
+
 .responsive li {
 	display: block;
 }

@@ -39,3 +39,13 @@ document.querySelector('#currentdate').textContent = fulldate;
 function toggleMenu() {
     document.getElementsByClassName("nav-bar")[0].classList.toggle("responsive");
 }
+
+const banner = document.querySelector(".pancakeBanner");
+
+if (dayName == "Friday"){
+    banner.style.display = "block";
+}
+
+else {
+    banner.style.display = "none";
+}
