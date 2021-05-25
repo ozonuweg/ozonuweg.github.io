@@ -36,7 +36,7 @@ h2 {
     padding: 10px;
     left: 3rem;
     background-color: rgba(237, 236, 236, 0.8);
-    margin-top: -10rem;
+    margin-top: -7rem;
 }
 
 .weatherSummary h3 {
@@ -46,7 +46,7 @@ h2 {
 
 .weatherSummary span {
     line-height: 20px;
-    font-size: 13px;
+    font-size: 11.5px;
 }
 
 .forecastSec {
