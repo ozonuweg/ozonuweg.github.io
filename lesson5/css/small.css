@@ -12,32 +12,23 @@ nav ul {
     flex-flow: column;
 }
 
-.headings {
-    margin-left: -15rem;
-}
-
 header img {
-    width: 50%;
+    width: 86px;
 }
 
 .headings h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .motto {
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 h2 {
     font-size: 1.5rem;
 }
 
-.weatherSummary {
-    padding: 10px;
-    left: 3rem;
-    background-color: rgba(237, 236, 236, 0.8);
-    margin-top: -9rem;
-}
+
 
 .weatherSummary h3 {
     font-size: 1em;
@@ -45,7 +36,7 @@ h2 {
 }
 
 .weatherSummary span {
-    line-height: 20px;
+    line-height: 15px;
     font-size: 11.5px;
 }
 
