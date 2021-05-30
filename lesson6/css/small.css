@@ -1,0 +1,53 @@
+@media only screen and (max-width: 649px) {
+.nav-bar li:first-child {
+	display: block;
+}
+.nav-bar li {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+}
+
+header img {
+    width: 86px;
+}
+
+.headings h1 {
+    font-size: 1.2rem;
+}
+
+.motto {
+    font-size: 0.7rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+
+.weatherSummary h3 {
+    font-size: 1em;
+    padding-bottom: 7px;
+}
+
+.weatherSummary span {
+    line-height: 15px;
+    font-size: 11.5px;
+}
+
+.forecastSec {
+    display: none;
+}
+
+
+.responsive li {
+	display: block;
+}
+
+
+}
