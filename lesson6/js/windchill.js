@@ -1,18 +1,10 @@
-let temp = document.querySelector("#cTemp").innerHTML;
-let speed = document.querySelector("#wSpeed").innerHTML;
+let t = parseFloat(document.querySelector(".temperature").innerHTML)
+let s = parseFloat(document.querySelector(".wind-speed").innerHTML)
+let chillFactor = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s,0.16)) + (0.4275 * t * Math.pow(s,0.16))
 
-if (temp <= 50 && speed >= 3) {
-    let f = windChill(temp, speed);
-    document.querySelector("#wcSpan").textContent = f;
+if (t <= 50.0 && s > 3.0) {
+    document.querySelector(".wind-chill").innerHTML = Math.ceil(chillFactor)
 }
-
 else {
-    let f = "N/A";
-    document.querySelector("#wcSpan").textContent = f;
-}
-
-
-function windChill(t, s) {
-    let chill = Math.round(35.74 + (0.6215 * t) - 35.75 * (Math.pow(s, 0.16)) + (0.4275 * t) * (Math.pow(s, 0.16))); 
-    return chill;
+    document.querySelector(".colored.chill").innerHTML = "N/A"
 }
