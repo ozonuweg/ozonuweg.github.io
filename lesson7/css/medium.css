@@ -1,0 +1,9 @@
+@media only screen and (max-width: 894px) and (min-width: 650px) {
+    .pic-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    picture:hover {
+        box-shadow: none;
+    }
+}
