@@ -22,6 +22,13 @@ h2 {
     border-color:black ;
 }
 
+/* Enable scrolling */
+ul.main {
+    width: 100%;
+    height: 190px;
+    overflow-y: scroll;
+}
+
 header, main, footer {
     margin: 0 auto;
     padding: 0.75rem;
