@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Storm Center Page for Weather Up to Date">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Weather Up To Date - Storm Center</title>   
+</head>
+
+<body>
+    <header class="the-header">
+        <picture><img class="logo" src="images/weather-logo.png" alt="icon"></picture>
+        <section class="headings">
+            <h1>Weather Up To Date</h1>
+            <div class="motto">stay with us, stay updated</div>
+        </section>
+    </header>
+    
+    <nav> 
+        <ul class="nav-bar">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li title="home"><a href="#">Home</a></li>
+            <li title="preston"><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li title="sodasprings"><a href="#">Soda Springs</a></li>
+            <li title="fishhaven"><a href="#">Fish Haven</a></li>
+            <li title="stormcenter"><a class="default" href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li title="gallery"><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main><br>
+        <h2>Report a Storm to Our Storm Center</h2>
+        <form action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name<span>*</span>
+                    <input name="name" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                </label>
+
+                <label>Email
+                    <input name="email" type="email" placeholder="someone@gmail.com">
+                </label>
+
+                <label>Phone Number<span>*</span>
+                    <input name="phone" type="tel" minlength="7" required>
+                </label>
+
+                <label>Zip Code<span>*</span>
+                    <input name="zip" type="number" min="10000" required>
+                </label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label>Storm Date
+                    <input name="storm-date" type="date">
+                </label>
+
+                <label>Storm Type
+                    <input list="weather-types" name="weather-types">
+                </label>
+
+                <datalist id="weather-types">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <div class="split"><span>Storm Severity</span>
+                    <input type="range" id="severity" name="severity" min="1" max="10" step="1" value="1" oninput="adjustLabel(this)">
+                    <label for="severity">1</label>
+                </div>
+                
+                <label>Storm Region
+                    <select name="region">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda springs">Soda Springs</option>
+                        <option value="fish haven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div>Are you in danger?
+                    <input type="radio" id="dan1" name="in-danger" value="yes"><label for="dan1" class="container"> Yes</label>
+                    <input type="radio" id="dan2" name="in-danger" value="maybe"><label for="dan2" class="container"> Maybe</label>
+                    <input type="radio" id="dan3" name="in-danger" value="no"><label for="dan3" class="container"> No</label>
+                </div>
+
+                <label>Any Additional Comments?
+                    <textarea name="additional-comments"></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Report Storm">
+        </form>
+
+    </main>
+
+    <footer>
+        &copy; <span id="currentdate"></span> | Glory Ozonuwe
+        <section class="update">Last Updated: <span id="lastmod"></span></section>
+    </footer>
+
+    <script src="js/week8.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Josefin Sans', 'Righteous']}});</script>
+</body>
+</html>
