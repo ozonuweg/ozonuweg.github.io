@@ -128,15 +128,19 @@ body{
 
 h1 {
     font-family: 'Righteous', cursive;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin: 0.15rem;
     color: rgb(4, 31, 4);
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     border-bottom: double;
     border-color:black ;
+}
+
+h2.page-header {
+    text-align: center;
 }
 
 h2, h3 {
