@@ -9,7 +9,7 @@ header {
     margin: 0px auto;
     padding: 10px 0px;
     font-size: 1rem;
-    color: rgb(135, 23, 8);
+    color: rgb(21, 85, 21);
     margin-bottom: 5px;
     font-family: 'Righteous', cursive;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 section {
-    background-color: rgba(106, 121, 160, 0.62);
+    background-color: rgba(108, 120, 152, 0.62);
     margin: 0 auto;
     text-align: center;
     padding: 20px 0px;
@@ -32,7 +32,7 @@ section {
 }
 
 h2 {
-    color: rgb(135, 23, 8);
+    color: rgb(120, 31, 4);
     font-family: 'Righteous', cursive;
     font-size: 20px;
     margin: 0px;
@@ -51,7 +51,7 @@ img {
 
 footer {
     text-align: center;
-    color: rgb(135, 23, 8);
+    color: rgb(21, 85, 21);
     font-family: 'Righteous', cursive;
     padding: 20px 0px 10px 0px;
 
