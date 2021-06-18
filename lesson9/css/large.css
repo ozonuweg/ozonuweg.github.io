@@ -1,0 +1,299 @@
+/* HEADER */
+header {
+    background-color: #773f1a;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 60rem;
+} 
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 2.8rem;
+    color: rgb(238, 238, 231);
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1.5pt;
+    font-size: 1.2rem;
+    color:white;
+}
+
+header img {
+    width: 120px;
+}
+
+img {
+    width: 100%
+}
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+	margin: 0 auto;
+	max-width: 60rem;
+	background-color: rgba(237, 236, 236, 0.8);
+    color: black;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-bar li:first-child {
+    display: none;
+}
+
+.nav-bar li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.nav-bar li a {
+    color: rgb(21, 85, 21);
+    font-size: 1rem;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 85, 21);
+    font-weight: 700;
+}
+
+.nav-bar a:link {
+    color: black;
+}
+
+.nav-bar a:visited {
+    color: rgb(21, 85, 21);
+}
+
+.nav-bar a:hover {
+    background-color: #773f1a;
+    color: white;
+}
+
+nav a.default, nav a:active {
+    background-color: #9b7053;
+    Box-shadow: 0 0 10px #773f1a;
+    color: rgb(238, 238, 231);
+} 
+
+
+
+
+
+
+/* WHOLE HTML */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* BODY */
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.9rem;
+    margin: 0.15rem;
+    color: rgb(4, 31, 4);
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-bottom: double;
+    border-color:black ;
+}
+
+h2.page-header {
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Righteous', cursive;
+    color: rgb(21, 85, 21);
+}
+
+h4, h5 {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #773f1a;
+	padding: 10px;
+    font-size: 1.1rem;
+    color:white;
+}
+
+.update{
+    font-size:12px;
+    color:white;
+}
+
+
+
+
+
+
+
+/* FORM CSS */
+form {
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+fieldset {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-bottom: 1.25rem;
+}
+fieldset legend {
+    padding: 0.25rem;
+}
+form label {
+    font-size: 0.8em;
+}
+form div label {
+    font-size: 1rem;
+}
+form label, form div {
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+form label span {
+    color: red;
+}
+div label {
+    margin-top: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+div input + label {
+    padding-top: 0;
+}
+form input:not([type="range"]), form select, form textarea {
+    outline: none;
+    box-shadow: 0 0 0 7px transparent;
+    transition: box-shadow 0.3s;
+}
+form input:not([type="range"]):not([type="radio"]):focus, form select:focus, form textarea:focus {
+    box-shadow: 0 0 0 4px rgb(21, 85, 21);
+}
+form label, form input, form select, form textarea {
+    display: block;
+    width: 100%;
+}
+form input {
+    margin-top: 5px;
+    width: calc(100% - 0.75rem * 2);
+    padding: 0.75rem;
+}
+form input[type="range"] {
+    width: 100%;
+    padding: 0;
+}
+form select {
+    margin-top: 5px;
+    padding: 0.75rem;
+}
+form input, form select, form textarea {
+    background-color: #eeeeee;
+    border: solid 1px rgb(21, 85, 21);
+    border-radius: 4px;
+}
+form input[type="submit"] {
+    background-color: rgb(21, 85, 21);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 100%;
+    margin-top: 10px;
+}
+form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #777;
+}
+form textarea {
+    width: calc(100% - 5px);
+    height: 5em;
+    margin-top: 5px;
+}
+form input:required:not(:valid) {
+    box-shadow: inset 0 0 0 2px red, 0 0 0 7px transparent;
+    transition: box-shadow 0.3s;
+}
+form input:required:valid {
+    box-shadow: inset 0 0 0 2px #773f1a, 0 0 0 7px transparent;
+    transition: box-shadow 0.3s;
+}
+form input:required:not(:valid):focus {
+    box-shadow: inset 0 0 0 2px red, 0 0 0 4px #773f1a;
+    transition: box-shadow 0.3s;
+}
+form input:required:valid:focus {
+    box-shadow: inset 0 0 0 2px #773f1a, 0 0 0 4px #773f1a;
+    transition: box-shadow 0.3s;
+}
+form div.split {
+    display: grid;
+    grid-template-columns: auto 30px;
+    justify-items: center;
+    align-items: center;
+}
+form div.split span {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+form div.split label {
+    text-align: center;
+    margin-top: 0;
+    padding: 6px;
+    width: 15px;
+}
+form div.split input {
+    margin-top: 0;
+}

@@ -1,0 +1,91 @@
+html {
+    min-width: 300px;
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    text-align: center;
+    width: 95%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    font-size: 1rem;
+    color: rgb(135, 23, 8);
+    margin-bottom: 5px;
+    font-family: 'Righteous', cursive;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+    box-shadow: 0 0 30px gray;
+    padding: 1rem;
+}
+
+section {
+    background-color: rgba(106, 121, 160, 0.62);
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+    width: 95%;
+    border: 1px solid rgb(78, 85, 103);
+}
+
+h2 {
+    color: rgb(135, 23, 8);
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 10px;
+    font-size: 17px;
+}
+
+img {
+    max-width: 200px;
+    box-shadow: 10px 10px 15px rgb(78, 85, 103);
+}
+
+footer {
+    text-align: center;
+    color: rgb(135, 23, 8);
+    font-family: 'Righteous', cursive;
+    padding: 20px 0px 10px 0px;
+
+}
+
+
+@media only screen and (min-width: 37.5em) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section {
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        margin: 10px 0px;
+    }
+}
+
+
+@media only screen and (min-width: 60em) {
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    footer {
+        padding: 30px 0px;
+    }
+}
