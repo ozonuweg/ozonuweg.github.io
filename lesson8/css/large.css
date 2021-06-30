@@ -224,9 +224,16 @@ form input:not([type="range"]), form select, form textarea {
 form input:not([type="range"]):not([type="radio"]):focus, form select:focus, form textarea:focus {
     box-shadow: 0 0 0 4px rgb(21, 85, 21);
 }
-form label, form input, form select, form textarea {
+form label, form select, form textarea {
     display: block;
     width: 100%;
+}
+form label.sbs {
+	padding: 3px;
+    width: 3.5rem;
+}
+div.dan label{
+    font-size: 0.7rem;
 }
 form input {
     margin-top: 5px;
