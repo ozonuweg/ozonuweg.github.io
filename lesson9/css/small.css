@@ -25,7 +25,11 @@
     }
 
     h2 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
     }
 
     h2.homepage-title {
@@ -35,7 +39,7 @@
     #towns {
         grid-template-columns: 1fr;
     }
-    #towns > div img {
+    #towns > .info img {
         max-width: 140%;
         position: absolute;
         left: calc(-20%);
@@ -44,7 +48,7 @@
         top: -150px;
         z-index: 3;
     }
-    #towns > div {
+    #towns > .info {
         position: relative;
         align-items: center;
         grid-template-columns: 1fr;
@@ -56,7 +60,7 @@
         z-index: 4;
         padding: 0;
     }
-    #towns > div section {
+    #towns > .info .writings {
         border-radius: 10px;
         box-shadow: 3px 3px 10px var black;
         background: rgba(255,255,255,0.8);
@@ -64,6 +68,10 @@
         margin: 0 auto;
         padding: 1em;
         z-index: 4;
+    }
+
+    h3.newsHeading {
+        font-size: 1.1rem;
     }
 
     .responsive li {

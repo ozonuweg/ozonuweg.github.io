@@ -1,0 +1,45 @@
+@media only screen and (max-width: 894px) and (min-width: 650px) {
+    #towns {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info:nth-child(odd) .image1size {
+        grid-column: 2;
+    }
+
+    .info:nth-child(odd) .writings {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #towns > .info img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h2.homepage-title {
+        font-size: 2.2rem;
+    }
+
+    header, footer {
+        margin: 0 auto;
+        max-width: auto;
+    }
+    main {
+        margin: 0 auto;
+        max-width: 50rem;
+    }
+
+    .headings h1 {
+        font-size: 2.6rem;
+    }
+
+    .motto {
+        letter-spacing: 1.3pt;
+        font-size: 0.9rem;
+    }
+}
