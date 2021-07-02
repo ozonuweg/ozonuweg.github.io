@@ -1,41 +1,72 @@
 @media only screen and (max-width: 649px) {
-.nav-bar li:first-child {
-	display: block;
-}
-.nav-bar li {
-    display: none;
-}
+    .nav-bar li:first-child {
+        display: block;
+    }
+    .nav-bar li {
+        display: none;
+    }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-flow: column;
-}
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column;
+    }
 
-header img {
-    width: 86px;
-}
+    header img {
+        width: 86px;
+    }
 
-.headings h1 {
-    font-size: 1.2rem;
-}
+    .headings h1 {
+        font-size: 1.6rem;
+    }
 
-.motto {
-    font-size: 0.7rem;
-}
+    .motto {
+        font-size: 0.7rem;
+    }
 
-h2 {
-    font-size: 1.1rem;
-}
+    h2 {
+        font-size: 1.1rem;
+    }
 
-form {
-    max-width: 450px;
-}
+    h2.homepage-title {
+        font-size: 1.4rem;
+    }
 
+    #towns {
+        grid-template-columns: 1fr;
+    }
+    #towns > div img {
+        max-width: 140%;
+        position: absolute;
+        left: calc(-20%);
+        margin: 0 auto;
+        width: 140%;
+        top: -150px;
+        z-index: 3;
+    }
+    #towns > div {
+        position: relative;
+        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 200px;
+        box-shadow: none;
+        display: block;
+        width: 60%;
+        z-index: 4;
+        padding: 0;
+    }
+    #towns > div section {
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px var black;
+        background: rgba(255,255,255,0.8);
+        position: relative;
+        margin: 0 auto;
+        padding: 1em;
+        z-index: 4;
+    }
 
-.responsive li {
-	display: block;
-}
-
-
+    .responsive li {
+        display: block;
+    }
 }
