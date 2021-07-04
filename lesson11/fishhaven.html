@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preston Town Page for Weather Up to Date">
+    <meta name="description" content="Fish Haven Town Page for Weather Up to Date">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,12 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <title>Weather Up To Date - Preston Idaho</title>   
+    <title>Weather Up To Date - Fish Haven Idaho</title>   
 </head>
 
 <body>
     <aside class="pancakeBanner">
-        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        Saturday = Fish Haven Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
     </aside>
 
     <header class="the-header">
@@ -35,21 +35,19 @@
         <ul class="nav-bar">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li title="home"><a href="./index.html">Home</a></li>
-            <li title="preston"><a class="default" href="./preston.html">Preston</a></li>
+            <li title="preston"><a href="./preston.html">Preston</a></li>
             <li title="sodasprings"><a href="./sodasprings.html">Soda Springs</a></li>
-            <li title="fishhaven"><a href="./fishhaven.html">Fish Haven</a></li>
+            <li title="fishhaven"><a  class="default" href="./fishhaven.html">Fish Haven</a></li>
             <li title="stormcenter"><a href="./stormcenter.html">Storm Center</a></li>
             <li title="gallery"><a href="./gallery.html">Gallery</a></li>
         </ul>
     </nav>
     
     <main><br>
-        <h2>Preston Idaho</h2>
+        <h2>Fish Haven Idaho</h2>
         <div class="hero">
             <picture class="heroImg">
-                <source srcset="images/banner_medium.jpg" media="(min-width:649px) and (max-width:991px)">
-                <source srcset="images/banner_large.jpg" media="(min-width:992px)">
-                <img src="images/banner_small.jpg" alt="beautiful bluish skies with sun and clouds">
+                <img src="images/fish-haven-banner.jpeg" alt="cloud meets water landscape">
             </picture>
 
             <section class="weatherSummary">
@@ -95,13 +93,18 @@
             </section>
         </div><br>
 
+        <!-- <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <span id="events"></span>
+        </section> -->
+
         <div class="article">
             <section class="articleSection">
                 <div class="img-holder">
-                    <img src="./images/tornado.jpg" alt="house destroyed by tornado">
+                    <img src="./images/snowstorm.jpg" alt="terrible snow all over cars">
                 </div>
-                <h3>Terrible Tornado Week</h3>
-                <h4>By Chizoba Ramsey</h4>
+                <h3>Is it Safe to go out in the Snow?</h3>
+                <h4>By Liza Benneth</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis fugiat ullam animi porro magni
                     beatae voluptatum error saepe? Officia repellendus deserunt fugiat odio quo a obcaecati dolorem,
@@ -123,7 +126,7 @@
                 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <h3>Contact Information</h3>
             <div class="contact-icons">
-                <i>&#128205; &#9; 30 N 1ST E <br>Preston, ID 83263</i><br><br>
+                <i>&#128205; &#9; 28 S 3rd W <br>Fish Haven, ID 83263</i><br><br>
                 <i>&#128222; &#9; (208) 123-4567</i><br>
                 <i>&#128231; &#9; info@weatheruptodate.com</i><br>
             
@@ -141,8 +144,9 @@
         <section class="update">Last Updated: <span id="lastmod"></span></section>
     </footer>
 
+    <script src="js/fishhaven.js"></script>
     <script src="js/week10.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/events.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Josefin Sans', 'Righteous']}});</script>
 </body>
