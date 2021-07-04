@@ -6,10 +6,14 @@ header {
 	justify-content: center;
 }
 
-header, main, footer {
+header, footer {
+    margin: 0 auto;
+    max-width: auto;
+}
+main {
     margin: 0 auto;
     max-width: 60rem;
-} 
+}
 
 .headings {
 	display: flex;
@@ -24,7 +28,7 @@ header, main, footer {
 .motto {
     font-style: italic;
     letter-spacing: 1.5pt;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:white;
 }
 
@@ -34,6 +38,11 @@ header img {
 
 img {
     width: 100%
+}
+
+
+.pancakeBanner {
+    font-size: 1.5rem;
 }
 
 

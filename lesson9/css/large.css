@@ -6,10 +6,6 @@ header {
 	justify-content: center;
 }
 
-/* header, main, footer {
-    margin: 0 auto;
-    max-width: 60rem;
-}  */
 header, footer {
     margin: 0 auto;
     max-width: auto;
@@ -18,9 +14,6 @@ main {
     margin: 0 auto;
     max-width: 60rem;
 }
-
-
-
 
 .headings {
 	display: flex;

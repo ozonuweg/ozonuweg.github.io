@@ -6,10 +6,14 @@ header {
 	justify-content: center;
 }
 
-header, main, footer {
+header, footer {
+    margin: 0 auto;
+    max-width: auto;
+}
+main {
     margin: 0 auto;
     max-width: 60rem;
-} 
+}
 
 .headings {
 	display: flex;
@@ -24,7 +28,7 @@ header, main, footer {
 .motto {
     font-style: italic;
     letter-spacing: 1.5pt;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:white;
 }
 
@@ -190,7 +194,7 @@ section.contact-info {
     grid-template-columns: 50% auto;
     box-shadow: 0 0 10px gray;
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 60rem;
 }
 section.contact-info iframe {
     width: 100%;
@@ -216,7 +220,7 @@ section.articleSection {
     padding: 0.9rem;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 50rem;
+    max-width: 60rem;
     box-shadow: 0 0 10px gray;
     background-color: rgb(238, 238, 231);
 }
@@ -300,6 +304,12 @@ section.articleSection .img-holder {
     transform: scale(1.5);
     filter: drop-shadow(1px 1px 1px black);
     width: 50%;
+}
+
+.forecast-h3 {
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: double;
 }
 
 
