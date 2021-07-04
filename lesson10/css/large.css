@@ -1,0 +1,346 @@
+/* HEADER */
+header {
+    background-color: #773f1a;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 60rem;
+} 
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 2.8rem;
+    color: rgb(238, 238, 231);
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1.5pt;
+    font-size: 1.2rem;
+    color:white;
+}
+
+header img {
+    width: 120px;
+}
+
+img {
+    width: 100%
+}
+
+
+.pancakeBanner {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* NAVIGATION */
+nav {
+	margin: 0 auto;
+	max-width: 60rem;
+	background-color: rgba(237, 236, 236, 0.8);
+    color: black;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-bar li:first-child {
+    display: none;
+}
+
+.nav-bar li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.nav-bar li a {
+    color: rgb(21, 85, 21);
+    font-size: 1rem;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 85, 21);
+    font-weight: 700;
+}
+
+.nav-bar a:link {
+    color: black;
+}
+
+.nav-bar a:visited {
+    color: rgb(21, 85, 21);
+}
+
+.nav-bar a:hover {
+    background-color: #773f1a;
+    color: white;
+}
+
+nav a.default, nav a:active {
+    background-color: #9b7053;
+    Box-shadow: 0 0 10px #773f1a;
+    color: rgb(238, 238, 231);
+} 
+
+
+
+
+
+
+/* WHOLE HTML */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* BODY */
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    margin: 0.15rem;
+    color: rgb(4, 31, 4);
+}
+
+h2 {
+    font-size: 1.7rem;
+    border-bottom: double;
+    border-color:black ;
+}
+
+h2, h3 {
+    font-family: 'Righteous', cursive;
+    color: rgb(21, 85, 21);
+}
+
+h4, h5 {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+div.place-holder {
+    padding: 1rem;
+    background-color: #eee;
+    border: dashed 1px darkgray;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #773f1a;
+	padding: 10px;
+    font-size: 1.1rem;
+    color:white;
+}
+
+.update{
+    font-size:12px;
+    color:white;
+}
+
+section.contact-info {
+    position: relative;
+    padding: 1rem;
+    display: grid;
+    align-content: center;
+    background-color: rgb(238, 238, 231);
+    grid-template-columns: 50% auto;
+    box-shadow: 0 0 10px gray;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+section.contact-info iframe {
+    width: 100%;
+    height: 200px;
+    grid-column: 1;
+    grid-row: span 3;
+    border: 0;
+}
+
+section.contact-info h3 {
+    grid-column: 2;
+    text-align: center;
+}
+
+div.contact-icons {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 12px;
+}
+
+section.articleSection {
+    margin: 0 auto;
+    padding: 0.9rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 50rem;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(238, 238, 231);
+}
+
+section.articleSection .img-holder {
+    float: right;
+    width: 50%;
+    max-width: 300px;
+    padding: 0.5rem 0 0 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SOCIAL MEDIA ICONS */
+.fa {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: rgb(238, 238, 231);
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: rgb(238, 238, 231);
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+
+
+
+/* FORECAST AND TABLE */
+.five-day {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 650px;
+}
+.five-day section {
+    border: solid 0.5px black;
+    padding: 0;
+}
+.five-day div {
+    margin: 0 auto;
+}
+.five-day h4 {
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(237, 236, 236, 0.8);
+    color: gray;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+.five-day span {
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    display: block;
+}
+.weather-icon img {
+    display: block;
+    margin: 10px auto;
+    transform: scale(1.5);
+    filter: drop-shadow(1px 1px 1px black);
+    width: 50%;
+}
+
+
+
+/* WEATHER SUMMARY */
+.hero {
+    position: relative;
+}
+
+.weatherSummary {
+    position: absolute;
+    padding: 10px;
+    left: 20px;
+    top: 20px;
+    /* width: auto;
+    height: auto; */
+    background-color: rgba(237, 236, 236, 0.8);
+    /* margin-top: -15rem; */
+    box-shadow: 0 0 10px rgba(135, 23, 8, 0.8);
+}
+  
+.weatherSummary span {
+   margin: 0px;
+   line-height: 30px;
+   text-align: left;
+   font-size: 20px;
+   font-weight: bold;
+}
+  
+.weatherSummary h3 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgba(135, 23, 8, 0.8);
+}
+
+section.weatherSummary span.colored {
+    padding-left: 5px;
+    color: green;
+}
+
+#condition {
+    text-transform:capitalize;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Town Page for Weather Up to Date">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Weather Up To Date - Preston Idaho</title>   
+</head>
+
+<body>
+    <aside class="pancakeBanner">
+        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+
+    <header class="the-header">
+        <picture><img class="logo" src="images/weather-logo.png" alt="icon"></picture>
+        <section class="headings">
+            <h1>Weather Up To Date</h1>
+            <div class="motto">stay with us, stay updated</div>
+        </section>
+    </header>
+    
+    <nav> 
+        <ul class="nav-bar">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li title="home"><a href="#">Home</a></li>
+            <li title="preston"><a class="default" href="../lesson6/preston-6.html">Preston</a></li>
+            <li title="sodasprings"><a href="#">Soda Springs</a></li>
+            <li title="fishhaven"><a href="#">Fish Haven</a></li>
+            <li title="stormcenter"><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li title="gallery"><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main><br>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture class="heroImg">
+                <source srcset="images/banner_medium.jpg" media="(min-width:649px) and (max-width:991px)">
+                <source srcset="images/banner_large.jpg" media="(min-width:992px)">
+                <img src="images/banner_small.jpg" alt="header image">
+            </picture>
+
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <span>Currently: </span><span id="condition">Cloudy</span><br>
+                <span>Temperature: </span><span id="temp">50</span>&#8457<br>
+                <span>Wind Chill: </span><span id="windchill">N/A</span><br>
+                <span>Humidity: </span><span id="humidity">69</span>%<br>
+                <span>Wind Speed: </span><span id="windspeed">8</span>mph<br>
+          </section>
+        </div>
+
+        <div class="forecast">
+            <section class="forecastSec">
+                <h3>5 Day Forecast</h3>
+                <div class="five-day">
+                    <section>
+                        <h4 class="topp" id="day1">Day 1</h4>
+                        <div class="weather-icon"></div>
+                        <span>89&deg;F</span>
+                    </section>
+                    <section>
+                        <h4 class="topp" id="day2">Day 2</h4>
+                        <div class="weather-icon"></div>
+                        <span>87&deg;F</span>
+                    </section>
+                    <section>
+                        <h4 id="day3">Day 3</h4>
+                        <div class="weather-icon"></div>
+                        <span>78&deg;F</span>
+                    </section>
+                    <section>
+                        <h4 id="day4">Day 4</h4>
+                        <div class="weather-icon"></div>
+                        <span>75&deg;F</span>
+                    </section>
+                    <section>
+                        <h4 id="day5">Day 5</h4>
+                        <div class="weather-icon"></div>
+                        <span>72&deg;F</span>
+                    </section>
+                </div>
+            </section>
+        </div><br>
+
+        <div class="article">
+            <section class="articleSection">
+                <div class="img-holder">
+                    <img src="./images/tornado.jpg" alt="house destroyed by tornado">
+                </div>
+                <h3>Terrible Tornado Week</h3>
+                <h4>By Chizoba Ramsey</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis fugiat ullam animi porro magni
+                    beatae voluptatum error saepe? Officia repellendus deserunt fugiat odio quo a obcaecati dolorem,
+                    reprehenderit possimus esse, molestiae nihil. Veniam labore reprehenderit atque esse molestiae? Eaque
+                    beatae doloribus quos placeat facere, hic saepe cum ea pariatur distinctio! Sapiente, aperiam blanditiis
+                    non eos rerum consectetur ex quod sed molestiae ipsum tempore, ea, reiciendis dolorum. Consequatur
+                    aspernatur modi doloribus repellat nostrum debitis natus maxime? Itaque aspernatur necessitatibus nobis
+                    ratione explicabo illo voluptates recusandae dolorum ducimus expedita quibusdam facere ex alias
+                    consequatur numquam, atque cum quis placeat fuga perferendis.
+                </p>
+            </section>
+        </div><br>
+
+        <section class="contact-info">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h3>Contact Information</h3>
+            <div class="contact-icons">
+                <i>&#128205; &#9; 30 N 1ST E <br>Preston, ID 83263</i><br><br>
+                <i>&#128222; &#9; (208) 123-4567</i><br>
+                <i>&#128231; &#9; info@weatheruptodate.com</i><br>
+            
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.google.com/" class="fa fa-google"></a>
+                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; <span id="currentdate"></span> | Glory Ozonuwe
+        <section class="update">Last Updated: <span id="lastmod"></span></section>
+    </footer>
+
+    <script src="js/week10.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Josefin Sans', 'Righteous']}});</script>
+</body>
+</html>
