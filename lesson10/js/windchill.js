@@ -45,9 +45,8 @@ fetch(apiURL)
 	jsonData.list.filter(item => item['dt_txt'].includes('18:00:00'))
 		.forEach((elem,index) => {
 
-			document.querySelector('#day'+(index+1)+' + .weather-icon')
-			.innerHTML = '<img src=\''+imgURL+elem.weather[0].icon+'.png\'>'
-			document.querySelector('#day'+(index+1)+' ~ span')
-				.innerHTML = elem.main.temp.toFixed(0) +'&deg;F'
+			document.querySelector('#day'+(index+1)+' + .weather-icon').innerHTML = '<img src=\''+imgURL+elem.weather[0].icon+'.png\'>'
+			document.querySelector('#day'+(index+1)+' ~ span').innerHTML = elem.main.temp.toFixed(0) +'&deg;F'
+      document.querySelector('#day'+(index+1)+'alt').innerHTML = elem.main.description
 		})
 })
