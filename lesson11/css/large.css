@@ -8,8 +8,8 @@ header {
 
 header, footer {
     margin: 0 auto;
-    max-width: auto;
 }
+
 main {
     margin: 0 auto;
     max-width: 60rem;
@@ -191,7 +191,7 @@ footer {
 
 
 
-/* CONTACT INFO FOOTER */
+/* CONTACT INFO */
 section.contact-info {
     position: relative;
     padding: 1rem;
