@@ -105,5 +105,15 @@
         display: block;
     }
 
+    /* TOWN PAGES EVENTS */
+    div.events {
+        max-width: 25rem;
+        padding: 0.7rem;
+        line-height: 25x;
+    }
+
+    div h2.events {
+        font-size: 1.3rem;
+    }
 
 }

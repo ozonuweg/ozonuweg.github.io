@@ -548,3 +548,27 @@ h2.homepage-title {
 #towns > .info span {
     font-size: small;
 }
+
+
+/* TOWN PAGES EVENTS */
+div.events {
+    background-color: rgb(244, 247, 203);
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 30px;
+    border-style: dotted;
+    color: black;
+}
+
+div h2.events {
+    box-shadow: 1px 1px 3px 1px rgb(238, 238, 231);
+    background-color: rgb(21, 85, 21);
+    color: white;
+    line-height: normal;
+}
+
+div.events:hover {
+    box-shadow: 1px 1px 3px 1px rgb(192, 129, 47);
+}

@@ -49,5 +49,44 @@ fetch(apiURL)
 			.innerHTML = '<img src=\''+imgURL+elem.weather[0].icon+'.png\'>'
 			document.querySelector('#day'+(index+1)+' ~ span')
 				.innerHTML = elem.main.temp.toFixed(0) +'&deg;F'
-		})
-})
+		});
+});
+
+
+
+
+// PRESTON EVENTS
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.log(jsonObject);
+    const towns = jsonObject['towns'];
+
+    for (let i = 0; i < towns.length; i++) {
+
+      if (towns[i].name === "Preston") {
+
+        let event = document.createElement('section');
+
+        let first = document.createElement('p')
+        let second = document.createElement('p')
+        let third = document.createElement('p')
+
+        first.textContent = `${towns[i].events[0]} `;
+        second.textContent = `${towns[i].events[1]} `;
+        third.textContent = `${towns[i].events[2]} `;
+
+        event.append(first);
+        event.append(second);
+        event.append(third)
+
+        document.querySelector('div.events').appendChild(event);
+      }
+
+    };
+
+  });
