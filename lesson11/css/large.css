@@ -281,7 +281,7 @@ h3.newsHeading {
 .five-day span.topp {
     border-bottom: solid;
     border-bottom-color: black;
-    color: gray;
+    color: black;
     font-size: 1.3rem; 
 }
 .five-day span.data {
