@@ -362,13 +362,9 @@ div.place-holder {
 	grid-gap: 10px;
 }
 
-p.pic-caption {
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 picture.body-pic {
     border: 3px solid #555;
+    text-align: center;
 }
 
 picture.body-pic:hover {
