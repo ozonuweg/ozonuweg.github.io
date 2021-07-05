@@ -30,7 +30,7 @@ fetch(apiURLW)
   let value = windChill(t, ws);
   
 
-  document.getElementById('winchill').textContent = value;
+  document.getElementById('windchill').textContent = value;
 
   });
 
