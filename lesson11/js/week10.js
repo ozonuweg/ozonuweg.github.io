@@ -49,18 +49,3 @@ if (dayName == "Friday"){
 else {
     banner.style.display = "none";
 }
-
-/* For the 5-day weather forecast */
-var days = [
-    "Sun",
-    "Mon",
-    "Tues",
-    "Wed",
-    "Thurs",
-    "Fri",
-    "Sat"
-]
-var today = new Date().getDay()
-for (let i = 0; i<5; i++) {
-    document.getElementById("day"+(i+1)).innerHTML = days[(today+i)%days.length]
-}

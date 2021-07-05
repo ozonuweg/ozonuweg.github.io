@@ -9,9 +9,9 @@ fetch(apiURLW)
 
 
     document.querySelector('#condition').textContent = jsObject.weather[0].description;
-    document.querySelector('#temp').innerHTML = jsObject.main.temp.toFixed(0);
-    document.querySelector('#humidity').textContent = jsObject.main.humidity;
-    document.querySelector('#windspeed').textContent = jsObject.wind.speed.toFixed(0);
+    document.querySelector('#temp').innerHTML = jsObject.main.temp.toFixed(0) +'&deg;F';
+    document.querySelector('#humidity').textContent = jsObject.main.humidity + "%";
+    document.querySelector('#windspeed').textContent = jsObject.wind.speed.toFixed(0) + "mph";
 
     let t = jsObject.main.temp;
     let ws = jsObject.wind.speed;
@@ -37,20 +37,38 @@ fetch(apiURLW)
 
 
 
-fetch(apiURL)
-.then(res => {
-	return res.json()
-})
-.then(jsonData => {
-	jsonData.list.filter(item => item['dt_txt'].includes('18:00:00'))
-		.forEach((elem,index) => {
+  fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
 
-			document.querySelector('#day'+(index+1)+' + .weather-icon')
-			.innerHTML = '<img src=\''+imgURL+elem.weather[0].icon+'.png\'>'
-			document.querySelector('#day'+(index+1)+' ~ span')
-				.innerHTML = elem.main.temp.toFixed(0) +'&deg;F'
-		});
-});
+    const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let day = 0;
+    
+
+    //Makes the list array 5
+    const fiveDayForecast = jsObject.list.filter( forecast => forecast.dt_txt.includes('18:00:00'));
+    
+
+    console.log(fiveDayForecast);
+
+    fiveDayForecast.forEach(x => {
+      let d = new Date(x.dt_txt);
+
+      let topp = 'https://openweathermap.org/img/w/' + x.weather[0].icon + '.png';
+      let desc = x.weather[0].description;
+
+
+      document.getElementById(`day${day+1}`).textContent = week[d.getDay()];
+      document.getElementById(`forecast${day+1}`).innerHTML = x.main.temp +'&deg;F';
+      
+      document.getElementById(`icon${day+1}`).setAttribute('src', topp);
+      document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+      day++;
+
+    });
+
+  });
 
 
 

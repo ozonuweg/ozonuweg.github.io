@@ -266,33 +266,30 @@ h3.newsHeading {
     grid-template-columns: repeat(5, 1fr);
     max-width: 650px;
 }
-.five-day section {
+.five-day div.box {
     border: solid 0.5px black;
-    padding: 0;
+    text-align: center;
 }
-.five-day div {
+.five-day img {
     margin: 0 auto;
-}
-.five-day h4 {
-    text-shadow: 1px 1px 1px black;
-    background-color: rgba(237, 236, 236, 0.8);
-    color: gray;
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0;
-}
-.five-day span {
-    color: black;
-    text-align: center;
-    padding: 0.5rem;
-    display: block;
-}
-.weather-icon img {
     display: block;
     margin: 10px auto;
     transform: scale(1.5);
     filter: drop-shadow(1px 1px 1px black);
     width: 50%;
+}
+.five-day span.topp {
+    text-shadow: 1px 1px 1px black;
+    border-bottom: solid;
+    border-bottom-color: black;
+    color: gray;
+    font-size: 1.2rem; 
+}
+.five-day span.data {
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    display: block;
 }
 
 .forecast-h3 {
@@ -313,11 +310,8 @@ h3.newsHeading {
     padding: 10px;
     left: 20px;
     top: 20px;
-    /* width: auto;
-    height: auto; */
     background-color: rgba(237, 236, 236, 0.8);
-    /* margin-top: -15rem; */
-    box-shadow: 0 0 10px rgba(135, 23, 8, 0.8);
+    box-shadow: 1px 1px 3px 0px rgba(135, 23, 8, 0.8);
 }
   
 .weatherSummary span {
@@ -326,22 +320,22 @@ h3.newsHeading {
    text-align: left;
    font-size: 20px;
    font-weight: bold;
+   color: rgb(66, 65, 65);
 }
   
 .weatherSummary h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-bottom: 10px;
     text-align: center;
     color: rgba(135, 23, 8, 0.8);
 }
 
-section.weatherSummary span.colored {
-    padding-left: 5px;
-    color: green;
-}
-
 #condition {
     text-transform:capitalize;
+}
+
+#condition, #temp, #windchill, #humidity, #windspeed {
+    color: rgb(0, 170, 0);
 }
 
 
