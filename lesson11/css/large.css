@@ -356,18 +356,18 @@ div.place-holder {
     font-style: italic;
 }
 
-.pic-gallery{
+.pic-gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
 }
 
-picture.body-pic {
+.body-pic {
     border: 3px solid #555;
     text-align: center;
 }
 
-picture.body-pic:hover {
+.body-pic:hover {
     box-shadow: 0 0 50px rgb(21, 85, 21);
 }
 

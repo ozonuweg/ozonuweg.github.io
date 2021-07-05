@@ -93,11 +93,11 @@
         max-width: 450px;
     }
 
-    .pic-gallery{
+    .pic-gallery {
         grid-template-columns: 1fr;
     }
 
-    picture:hover {
+    .body-pic:hover {
         box-shadow: none;
     }
 

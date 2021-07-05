@@ -41,11 +41,11 @@
         font-size: 0.9rem;
     }
 
-    .pic-gallery{
+    .pic-gallery {
         grid-template-columns: 1fr 1fr;
     }
     
-    picture:hover {
+    .body-pic:hover {
         box-shadow: none;
     }
 }
