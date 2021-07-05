@@ -279,11 +279,11 @@ h3.newsHeading {
     width: 50%;
 }
 .five-day span.topp {
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0.5px 0.5px 0.5px gray;
     border-bottom: solid;
     border-bottom-color: black;
-    color: gray;
-    font-size: 1.2rem; 
+    color: black;
+    font-size: 1.3rem; 
 }
 .five-day span.data {
     color: black;
