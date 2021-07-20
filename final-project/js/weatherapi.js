@@ -18,7 +18,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-     const weekday = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+     const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
      let day = 1;
  
      // sort the daily forecast into the next three days aside the current day
