@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warri Chamber of Commerce Home Page">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Days+One&display=swap" rel="stylesheet">
+    
+    <title>Warri Chamber of Commerce - Home Page</title>   
+</head>
+
+<body>
+
+    <header class="the-header">
+        <nav> 
+            <ul class="nav-bar">
+                <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li title="Home"><a class="active" href="#">Home</a></li>
+                <li title="Warri"><a href="#">Warri</a></li>
+                <li title="Join"><a href="#">Join</a></li>
+                <li class="logo showlogo"><a href="#"><img src="images/WCC-Logo.png" alt="a logo that has symbols of unity and networking"></a></li>
+                <li title="Directory"><a href="#">Directory</a></li>
+                <li title="Contact"><a href="#">Contact</a></li>
+                <li><input type="text" placeholder="Search.."></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+        <div class="home-section-1">
+            <div class="headings">
+                <h1>Welcome to Warri Chamber of Commerce</h1>
+                <div class="motto">The Local businesses' home of Possibilities, Network, Community, and Growth</div>
+            </div>  
+            <div class="purpose-container">
+                <h2>Who We Are</h2>
+                <p>This chamber is designed to help local business owners and professionals in Warri through networking, community, advertising, and promotion.
+                    Our target audience is every business owner who resides in Warri and have access to the internet. This particularly includes people who 
+                    are just getting into business, people who have little or no knowledge on business, those who are very successful, even start-ups. 
+                    This is also for people who just want to know what is going on around them.
+                </p>
+            </div>
+        </div>
+
+        <div class="home-section-2">
+            <img class="img1" src="images/warri-city-1.jpeg" alt="aeriel view of Warri">
+            <img class="img2" src="images/warri-city-2.jpeg" alt="aeriel view of Warri">
+            <img class="img3" src="images/warri-city-3.jpg" alt="aeriel view of Warri">
+        </div>
+
+        <div class="home-weather-3">
+            <ul class="weather-summary">
+               <li class="summary">TODAY'S WEATHER SUMMARY</li>
+               <li>Currently: <span id="condition"></span></li>
+               <li>Temperature: <span id="temperature"></span></li>
+               <li>Feels Like: <span id="feels-like"></span></li>
+               <li>Humidity: <span id="humidity"></span></li>
+            </ul>
+            <ul class="weather-forecast">
+                <li class="forecast">3-DAY FORECAST</li>
+                <li><span id=temperature1"></span>&deg; F</li>
+                <li><span id="temperature2"></span>&deg; F</li>
+                <li><span id="temperature3"></span>&deg; F</li>
+             </ul>
+         </div>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h5>Contact Information</h5>
+            <div class="contact-icons">
+                <i>&#128205; &#9; 30 N 1ST E Effurun, Delta State, Nigeria</i>
+                <i>&#128222; &#9; 09012345678</i>
+                <i>&#128231; &#9; info@warrichamberofcommerce.com</i>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="a facebook icon"></a>
+                <a href="https://twitter.com/"><img src="images/twitter-icon.png" alt="a twitter icon"></a>
+                <a href="https://www.google.com/"><img src="images/google-icon.png" alt="a google icon"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube-icon.png" alt="a youtube icon"></a>
+            </div>
+        </section>
+
+        &copy; <span id="currentdate"></span> | Warri Chamber of Commerce
+        <div class="update">Last Updated: <span id="lastmod"></span></div>
+    </footer>
+
+    <script src="js/style.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Cormorant Unicase', 'Days One']}});</script>
+</body>
+</html>
