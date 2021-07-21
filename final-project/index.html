@@ -50,27 +50,84 @@
             </div>
         </div>
 
+        <!-- Weather alerts(if any) -->
+        <button class="hidden" id="alert" onclick="closeAlert()"></button>
+
         <div class="home-section-2">
             <img class="img1" src="images/warri-city-1.jpeg" alt="aeriel view of Warri">
             <img class="img2" src="images/warri-city-2.jpeg" alt="aeriel view of Warri">
             <img class="img3" src="images/warri-city-3.jpg" alt="aeriel view of Warri">
         </div>
 
-        <div class="home-weather-3">
-            <ul class="weather-summary">
-               <li class="summary">TODAY'S WEATHER SUMMARY</li>
-               <li>Currently: <span id="condition"></span></li>
-               <li>Temperature: <span id="temperature"></span></li>
-               <li>Feels Like: <span id="feels-like"></span></li>
-               <li>Humidity: <span id="humidity"></span></li>
-            </ul>
-            <ul class="weather-forecast">
-                <li class="forecast">3-DAY FORECAST</li>
-                <li><span id=temperature1"></span>&deg; F</li>
-                <li><span id="temperature2"></span>&deg; F</li>
-                <li><span id="temperature3"></span>&deg; F</li>
-             </ul>
-         </div>
+        <div class="home-section-3">
+            <div class="home-weather-3">
+                <ul class="weather-summary">
+                <li class="summary">TODAY'S WEATHER SUMMARY</li>
+                <li>Currently: <span id="condition"></span></li>
+                <li>Temperature: <span id="temperature"></span></li>
+                <li>Feels Like: <span id="feels-like"></span></li>
+                <li>Humidity: <span id="humidity"></span></li>
+                </ul>
+                <ul class="weather-forecast">
+                    <li class="forecast">3-DAY FORECAST</li>
+                    <li><span id="day1"></span>&nbsp;<span id="temperature1"></span></li>
+                    <li><span id="day2"></span>&nbsp;<span id="temperature2"></span></li>
+                    <li><span id="day3"></span>&nbsp;<span id="temperature3"></span></li>
+                </ul>
+            </div>
+
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <p>July 31st - Sunshine Boutique Sale</p>
+                <p>August 5th - Toyota Premium Rally, Jakpa Road</p>
+                <p>August 19th - Efe's Interior Store Launch</p>
+                <p>August 28th - Annual Chamber's Conference</p>
+                <p>September 21st - Food Academy Warri Graduation Party</p>
+                <p>November 11th - RCCG Champion's Cathedral 7DG</p>
+                <p>December 26th - Warri Chamber End of the Year Groove</p>
+            </div>
+        </div>
+
+        <section class="advertisement">
+            <h3>Top 3 local businesses of the Week!</h3>
+            <div class="adverts">
+                <div class="locals">
+                    <img src="images/temple-grill.jpg" alt="food from temple grill">
+                    <h4>Temple Grill</h4>
+                    <p>At Temple Grill, they offer meals of excellent quality and invite you to try their delicious food. 
+                        The key to their success is simple: providing quality consistent food that taste great every single time. 
+                        They pride tehmselves on serving their customers delicious genuine dishes like: Pizza, Sandwiches, Burger, etc.
+                        Eat delicious food. Grab a drink. But most of all, relax!
+                    </p>
+                </div>
+                <div class="locals">
+                    <img src="images/ovismassage.png" alt="flyer of Ovis Massage Company">
+                    <h4>Ovis Massage</h4>
+                    <p>We present to you, one of Nigeria's leading massage company: Ovis Massage. A massage is an essential part of our lives. With the ever increasing need to get your hustle out there, it is 
+                        imperative that you take care of the body that brings in the cash. Invest your money wisely today. Invest in Ovis Massage for as low as 1k.
+                        They have a track record of giving dividends that is as low as 150% of initial investment.
+                        
+                    </p>
+                </div>
+                <div class="locals">
+                    <img src="images/afestudios.png" alt="Flyer of a retreat from Afe studios">
+                    <h4>Afe Studios</h4>
+                    <p>AFE Studios is a one-stop shop solutions and result driven photography & Graphics business, Registered under 
+                        the Companies and Allied Matters Act of Nigeria. They provide the expertise in ensuring that their client’s 
+                        satisfaction in all services they render and translate this effectively to their clients. AFE Studios is the brainchild 
+                        of Solomon Elohor Abe, a Lawyer by training from University of The Gambia, who has been practicing photography professionally for more than a decade. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="home-section-5">
+            <p>Warri's Chamber of Commerce is a world class city Chamber, the driver of the economy of Warri and its environs, working to enhance the growth and development of the area by facilitating its commerce, industrial and  agricultural 
+                sectors. We are well informed business organization with robust foreign relations. To promote and protect the interests of its members and the business community at large through public policy advocacy, creation and facilitation 
+                of commercial and industrial opportunity, provision of business development and services and observance of highest standard of business ethics.
+            </p>
+            <button class="joinButton" type="submit" onclick="location.href = 'join.html'">Join the Chamber</button>
+        </div>
     </main>
 
     <footer>

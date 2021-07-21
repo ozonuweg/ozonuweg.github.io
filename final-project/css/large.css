@@ -1,14 +1,14 @@
-@media only screen and (min-width: 992px) {
+
     body {
         background-color: white;
     }
     nav {
         margin: 0 auto;
-        /* background-color: #bf4ebd86; */
         background-color: #df9e3dda;
         color: white;
         max-width: 85rem;
         padding-right: 20px;
+        border-radius: 10px;
     }
     
     ul.nav-bar {
@@ -33,11 +33,12 @@
         font-size: 1.5rem;
         font-family: 'Days One', sans-serif;
     }
-    ul.nav-bar a:hover, ul.nav-bar a:focus, ul.nav-bar a.active {
-        color: #bf4ebd;
+    ul.nav-bar a:hover, ul.nav-bar a:focus {
+        color: rgb(61, 31, 196);
     }
     ul.nav-bar a.active {
         background-color: white;
+        color: rgb(61, 31, 196);
         padding: 5px;
         box-shadow: 0 0 13px rgb(61, 31, 196);
         border-radius: 15px;
@@ -54,12 +55,16 @@
 
     header, footer {
         margin: 0 auto;
+        border-radius: 10px;
     }
     
     main {
         margin: 0 auto;
         max-width: 75rem;
-        background-color: thistle;
+        background-color: white;
+    }
+    body {
+        background-color: #df9e3d44;
     }
 
     section.contact-info {
@@ -68,12 +73,9 @@
         display: grid;
         align-content: center;
         grid-template-columns: 1fr 1fr;
-        /* box-shadow: 0 0 10px gray; */
         max-width: 85rem;
         border-bottom: 1px solid black;
-        line-height: 2px;
     }
-
     section.contact-info h5, div.contact-icons {
         grid-column: 1/2;
         text-align: start;
@@ -129,23 +131,31 @@
     .headings .motto {
         font-size: 1.5rem;
     }
-
     .purpose-container p {
         font-size: 25px;
     }
-    /* Purpose container */
     .purpose-container {
         grid-column: 2/3;
         border-left: 1px solid black;
         padding: 10px;
     }
-
     .purpose-container:hover {
-        background-color: gray;
-        color: white;
+        background-color: rgba(48, 48, 135, 0.4);
+        color: #FBF3F0;
         font-size: 15px;
         box-shadow: 0 0 13px rgb(61, 31, 196);
     }
+
+    #alert {
+        background-color: #D58936;
+        color: #FBF3F0;
+        font-size: 20px;
+        font-family: "Merriweather", Arial, serif;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        border: none;
+     }
 
     /* HOME PAGE SECTION 2 */
     .home-section-2 {
@@ -156,6 +166,7 @@
     }
     .home-section-2 img {
         width: 100%;
+        border-radius: 10px;
     }
     .home-section-2 img.img1 {
         grid-column: 1/2;
@@ -166,4 +177,91 @@
     .home-section-2 img.img3 {
         grid-column: 3/4;
     }
-}
+
+
+    .weather-summary,
+    .weather-forecast {
+    list-style-type: none;
+    display: block;
+    background-color: rgba(48, 48, 135, 0.4);
+    color: #FBF3F0;
+    font-size: 18px;
+    padding: 20px;
+    width: 400px;
+    font-family: 'Cormorant Unicase', sans-serif;
+    border-radius: 10px;
+    }
+
+    li.summary, li.forecast {
+        font-family: 'Days One', sans-serif;
+    }
+
+    #condition, #temperature, #feels-like, #humidity, #temperature1, #temperature2, #temperature3 {
+        color: rgb(61, 31, 196);
+    }
+
+    .home-section-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+    }
+
+
+    div.adverts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 30px auto 20px;
+    }
+    div.adverts > .locals {
+        width: calc(90% - 1em);
+        margin: 30px auto;
+        text-align: center;
+        box-shadow: 3px 3px 10px black;
+        border-radius: 10px;
+        padding: 1em;
+        font-family: 'Cormorant Unicase', sans-serif;
+    }
+    div.adverts > .locals img {
+        height: 170px;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    div.adverts > .locals h4 {
+        margin: 0;
+        margin-top: 0.5em;
+        letter-spacing: 2px;
+    }
+    section.advertisement h3 {
+        font-size: 2rem;
+        text-align: center;
+        text-decoration:underline;
+    }
+    section.advertisement {
+        margin-top: 3rem;
+    }
+    div.home-section-5 {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(48, 48, 135, 0.4);
+        text-align: center;
+    }
+    .joinButton {
+        align-content: center;
+        background-color: white; 
+        color: black;
+        border: 2px solid white; 
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Days One', sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        width: 70rem;
+    }
+    .joinButton:hover {
+        background-color: rgb(61, 31, 196);
+        color: white;
+    }

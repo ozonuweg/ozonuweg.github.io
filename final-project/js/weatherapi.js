@@ -19,15 +19,15 @@ fetch(apiURL)
   .then((jsObject) => {
 
      const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-     let day = 1;
+     let day = 0;
  
      // sort the daily forecast into the next three days aside the current day
      const threedaysForecast = [ jsObject.daily[1], jsObject.daily[2], jsObject.daily[3] ];
  
      threedaysForecast.forEach(x => {
        let d = new Date(x.dt * 1000);
-       document.getElementById(`day${day}`).innerHTML = weekday[d.getDay()];
-       document.getElementById(`temperature${day}`).innerHTML = x.temp.day;
+       document.getElementById(`day${day+1}`).innerHTML = weekday[d.getDay()];
+       document.getElementById(`temperature${day+1}`).innerHTML = (x.temp.day - 273.15).toFixed(2) + "&deg; C";
        day++;
      });
  });
