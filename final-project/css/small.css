@@ -1,0 +1,54 @@
+@media only screen and (max-width: 649px) {
+    main {
+        padding: 5px;
+    }
+    ul.nav-bar li:first-child {
+        display: block;
+    }
+    .nav-bar li {
+        display: none;
+    }
+    ul.nav-bar li a {
+        font-size: 1rem;
+    }
+    nav ul {
+        flex-flow: column;
+    }
+    header img {
+        width: 120px;
+    }
+    .home-section-1 {
+        grid-template-columns: 1fr;
+    }
+    div.home-section-1 div.headings {
+        text-align: center;
+    }
+    .headings h1 {
+        font-size: 2.7rem;
+    }
+    .headings .motto {
+        font-size: 1.25rem;
+    }
+    div.purpose-container {
+        display: none;
+    }
+    .home-section-2 {
+        grid-template-columns: 1fr;
+    }
+    .home-section-3 {
+        grid-template-columns: 1fr;
+    }
+    .home-weather-3 {
+        display: none;
+    }
+    div.events {
+        text-align: center;
+    }
+    section.advertisement {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+}

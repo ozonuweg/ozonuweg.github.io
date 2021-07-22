@@ -31,3 +31,6 @@ fetch(apiURL)
        day++;
      });
  });
+
+
+// THERE'S NO 'ALERTS' DATA IN MY EXACT LOCATION SO I DID NOT INCLUDE ONE.

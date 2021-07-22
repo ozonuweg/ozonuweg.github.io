@@ -1,0 +1,36 @@
+@media only screen and (max-width: 894px) and (min-width: 650px) {
+    header, footer, nav {
+        max-width: 58rem;
+    }
+    main {
+        max-width: 50rem;
+    }
+    ul.nav-bar li a {
+        font-size: 1.2rem;
+    }
+    .headings h1 {
+        font-size: 2.9rem;
+    }
+    .headings .motto {
+        font-size: 1.1rem;
+    }
+    .purpose-container p {
+        font-size: 19px;
+    }
+    .home-section-2 {
+        grid-template-columns: repeat( 4, 1fr );
+    }
+    .home-section-2 img.img {
+        grid-column: span 2;
+    }
+    .home-section-2 img.img:nth-last-child(1):nth-child(odd) {
+        grid-column: 2 / span 2;
+    }
+    .weather-summary,
+    .weather-forecast {
+        width: 300px;
+    }
+    section.advertisement h3 {
+        font-size: 1.6rem;
+    }
+}

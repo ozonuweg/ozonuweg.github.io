@@ -8,9 +8,9 @@
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Days+One&display=swap" rel="stylesheet">
     
@@ -20,20 +20,20 @@
 <body>
 
     <header class="the-header">
-        <nav> 
-            <ul class="nav-bar">
-                <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li title="Home"><a class="active" href="#">Home</a></li>
-                <li title="Warri"><a href="#">Warri</a></li>
-                <li title="Join"><a href="#">Join</a></li>
-                <li class="logo showlogo"><a href="#"><img src="images/WCC-Logo.png" alt="a logo that has symbols of unity and networking"></a></li>
-                <li title="Directory"><a href="#">Directory</a></li>
-                <li title="Contact"><a href="#">Contact</a></li>
-                <li><input type="text" placeholder="Search.."></li>
-            </ul>
-        </nav>
-    </header>   
+        <picture><img src="images/WCC-Logo.png" alt="a logo that has symbols of unity and networking"> </picture>
+    </header>
 
+    <nav>
+        <ul class="nav-bar">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Warri</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+    </nav>
+ 
     <main>
         <div class="home-section-1">
             <div class="headings">
@@ -50,23 +50,20 @@
             </div>
         </div>
 
-        <!-- Weather alerts(if any) -->
-        <button class="hidden" id="alert" onclick="closeAlert()"></button>
-
         <div class="home-section-2">
-            <img class="img1" src="images/warri-city-1.jpeg" alt="aeriel view of Warri">
-            <img class="img2" src="images/warri-city-2.jpeg" alt="aeriel view of Warri">
-            <img class="img3" src="images/warri-city-3.jpg" alt="aeriel view of Warri">
+            <img class="img" src="images/warri-city-1.jpeg" alt="aeriel view of Warri">
+            <img class="img" src="images/warri-city-2.jpeg" alt="landscape view of Warri ">
+            <img class="img" src="images/warri-city-3.jpg" alt="a view of Warri taken with a drone">
         </div>
 
         <div class="home-section-3">
             <div class="home-weather-3">
                 <ul class="weather-summary">
-                <li class="summary">TODAY'S WEATHER SUMMARY</li>
-                <li>Currently: <span id="condition"></span></li>
-                <li>Temperature: <span id="temperature"></span></li>
-                <li>Feels Like: <span id="feels-like"></span></li>
-                <li>Humidity: <span id="humidity"></span></li>
+                    <li class="summary">TODAY'S WEATHER SUMMARY</li>
+                    <li>Currently: <span id="condition"></span></li>
+                    <li>Temperature: <span id="temperature"></span></li>
+                    <li>Feels Like: <span id="feels-like"></span></li>
+                    <li>Humidity: <span id="humidity"></span></li>
                 </ul>
                 <ul class="weather-forecast">
                     <li class="forecast">3-DAY FORECAST</li>
@@ -109,7 +106,7 @@
                         
                     </p>
                 </div>
-                <div class="locals">
+                <div class="locals more">
                     <img src="images/afestudios.png" alt="Flyer of a retreat from Afe studios">
                     <h4>Afe Studios</h4>
                     <p>AFE Studios is a one-stop shop solutions and result driven photography & Graphics business, Registered under 
@@ -126,7 +123,7 @@
                 sectors. We are well informed business organization with robust foreign relations. To promote and protect the interests of its members and the business community at large through public policy advocacy, creation and facilitation 
                 of commercial and industrial opportunity, provision of business development and services and observance of highest standard of business ethics.
             </p>
-            <button class="joinButton" type="submit" onclick="location.href = 'join.html'">Join the Chamber</button>
+            <button class="joinButton" type="submit" onclick="location.href='join.html'">Join the Chamber</button>
         </div>
     </main>
 
