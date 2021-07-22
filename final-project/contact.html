@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Warri Chamber of Commerce Directory">
+    <meta name="description" content="Warri Chamber of Commerce Contact Page">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Days+One&display=swap" rel="stylesheet">
     
-    <title>Warri Chamber of Commerce - Directory</title>   
+    <title>Warri Chamber of Commerce - Contact Page</title>   
 </head>
 
 <body>
@@ -29,14 +29,41 @@
             <li><a href="../final-project/index.html">Home</a></li>
             <li><a href="../final-project/warri.html">Warri</a></li>
             <li><a href="../final-project/join.html">Join</a></li>
-            <li><a class="active" href="../final-project/directory.html">Directory</a></li>
-            <li><a href="../final-project/contact.html">Contact</a></li> 
+            <li><a href="../final-project/directory.html">Directory</a></li>
+            <li><a class="active" href="../final-project/contact.html">Contact</a></li> 
         </ul>
     </nav>
  
     <main>
-        <h1 class="directory-title">Warri Chamber of Commerce Directory</h1>
-        <div class="cards"></div>
+        <div class="contact-form">
+            <form action="confirmation.html">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label>First Name<span class="asterisk">*</span>
+                        <input name="fname" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                    </label>
+    
+                    <label>Last Name<span class="asterisk">*</span>
+                        <input name="lname" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                    </label>
+    
+                    <label>Email<span class="asterisk">*</span>
+                        <input name="email" type="email" placeholder="someone@gmail.com" required>
+                    </label>
+    
+                    <label>Phone Number
+                        <input name="phone" type="tel" minlength="7">
+                    </label>
+
+                    <label>Message
+                        <input name="title" type="text" placeholder="Type your message here">
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+        <div class="bod">
+            <h2>Board of Directors</h2>
+        </div>
     </main>
 
     <footer>
@@ -61,7 +88,6 @@
 
     <script src="js/script.js"></script>
     <script src="js/weatherapi.js"></script>
-    <script src="js/directory.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Cormorant Unicase', 'Days One']}});</script>
 </body>
