@@ -377,3 +377,11 @@ div.cards > section {
     padding: 1em;
     font-family: 'Cormorant Unicase', sans-serif;
 }
+main.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+div.bod ul {
+    list-style-type: circle;
+}

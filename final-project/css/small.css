@@ -50,7 +50,12 @@
     div.img-holder {
         grid-template-columns: 1fr;
     }
-
+    div.cards {
+        grid-template-columns: 1fr;
+    }
+    main.contact-page {
+        grid-template-columns: 1fr;
+    }
     .responsive li {
         display: block;
     }

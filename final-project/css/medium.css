@@ -36,4 +36,7 @@
     div.img-holder img {
         height: 300px;
     }
+    div.cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
