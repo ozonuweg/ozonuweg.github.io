@@ -359,3 +359,13 @@ div.benefits {
     font-family: 'Cormorant Unicase', sans-serif;
     box-shadow: 0 0 13px rgb(61, 31, 196);
 }
+h2.directory-title {
+    text-align: center;
+}
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+    box-shadow: 0 0 30px gray;
+    padding: 1rem;
+}
