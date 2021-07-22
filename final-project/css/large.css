@@ -61,6 +61,7 @@ ul.nav-bar li:first-child {
     main {
         margin: 0 auto;
         max-width: 75rem;
+        padding: 3px;
         background-color: white;
     }
     body {
@@ -153,9 +154,20 @@ ul.nav-bar li:first-child {
         grid-gap: 10px;
         margin: 20px 0 20px 0;
     }
-    .home-section-2 img {
+    .home-section-2 img, section.warriSection div.img-holder img {
         width: 100%;
         border-radius: 10px;
+    }
+    div.img-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    div.img-holder img {
+        height: 400px;
+    }
+    div.warri-events {
+        font-family: 'Cormorant Unicase', sans-serif;
     }
 
     .weather-summary,
@@ -244,3 +256,4 @@ ul.nav-bar li:first-child {
         background-color: rgb(61, 31, 196);
         color: white;
     }
+

@@ -47,6 +47,9 @@
     section.advertisement {
         display: none;
     }
+    div.img-holder {
+        grid-template-columns: 1fr;
+    }
 
     .responsive li {
         display: block;

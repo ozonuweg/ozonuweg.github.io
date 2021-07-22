@@ -33,4 +33,7 @@
     section.advertisement h3 {
         font-size: 1.6rem;
     }
+    div.img-holder img {
+        height: 300px;
+    }
 }
